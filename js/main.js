@@ -2,7 +2,6 @@
 
 var myapp = angular.module('myapp', ["ui.router"])
 
-angular.module('myModule', ['ui.bootstrap']);
 
 myapp.config(function($stateProvider, $urlRouterProvider){
   $urlRouterProvider.otherwise("/planets/1")
