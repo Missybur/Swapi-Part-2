@@ -9,12 +9,12 @@ myapp.config(function($stateProvider, $urlRouterProvider){
   $stateProvider
   .state('planets', {
     url: "/planets/:page",
-    templateUrl: "../partials/planets.html",
+    templateUrl: "partials/planets.html",
     controller: "PlanetCtrl"
   })
   .state('resident', {
     url: "/resident/:id",
-    templateUrl: "../partials/resident.html",
+    templateUrl: "partials/resident.html",
     controller: "ResidentCtrl"
   })
 })

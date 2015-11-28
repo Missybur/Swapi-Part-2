@@ -1,6 +1,6 @@
 'use strict';
 
-myapp.controller("ResidentCtrl", function($scope, $http, $stateParams, SwapiService) { //when I bring in SwapiService in this function, I get the error message
+myapp.controller("ResidentCtrl", function($scope, $http, $stateParams, SwapiService) {
   console.log('ResidentCtrl loaded');
   if(SwapiService.residents[$stateParams.id]) {
     console.log('cache loading');

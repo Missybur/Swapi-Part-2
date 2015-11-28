@@ -2,28 +2,6 @@
 
 var myapp = angular.module('myapp')
 
-// app.controller('PlanetCtrl', function($scope, $http) {
-
-//       $http.get('http://swapi.co/api/planets/?page=${page}&format=json')
-//       .then(res => {
-//         if(res.data.previous === null){
-//           $rootScope.firstPage = page;
-//         }
-//         if(res.data.next === null){
-//           $rootScope.lastPage = page;
-//         }
-//         Swapi.planets[page] = res.data.results.map(planet => {
-//           planet.residents = planet.residents.map(resident => {
-//             var resident = { url: resident };
-//             resident.id = resident.url.match(/\d+/)[0];
-//             return resident;
-//           });
-//           return planet;
-//         });
-//       })
-//       .catch(error => console.error(error.status)});
-// })
-
 myapp.controller("PlanetCtrl", function($rootScope, $scope, $state, $stateParams, SwapiService) {
 
   $rootScope.page = parseInt($stateParams.page);
