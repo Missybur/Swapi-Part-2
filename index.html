@@ -6,49 +6,50 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/css/foundation.min.css">
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.4/angular.js"></script>
   <script src="//angular-ui.github.io/ui-router/release/angular-ui-router.js"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous"> -->
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous"> -->
   <!-- // <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"></script> -->
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-<div class="container">
+<!--   <div class="container">
     <div class="btn-group" uib-dropdown uib-keyboard-nav>
-        <button id="simple-btn-keyboard-nav" type="button" class="btn btn-primary" uib-dropdown-toggle>
-            Dropdown with keyboard navigation <span class="caret"></span>
-        </button>
-        <ul class="uib-dropdown-menu" role="menu" aria-labelledby="simple-btn-keyboard-nav">
-            <li role="menuitem"><a href="#">Action</a></li>
-            <li role="menuitem"><a href="#">Another action</a></li>
-            <li role="menuitem"><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li role="menuitem"><a href="#">Separated link</a></li>
-        </ul>
+      <button id="simple-btn-keyboard-nav" type="button" class="btn btn-primary" uib-dropdown-toggle>
+        Dropdown with keyboard navigation <span class="caret"></span>
+      </button>
+      <ul class="uib-dropdown-menu" role="menu" aria-labelledby="simple-btn-keyboard-nav">
+        <li role="menuitem"><a href="#">Action</a></li>
+        <li role="menuitem"><a href="#">Another action</a></li>
+        <li role="menuitem"><a href="#">Something else here</a></li>
+        <li class="divider"></li>
+        <li role="menuitem"><a href="#">Separated link</a></li>
+      </ul>
     </div>
+  </div> -->
+  <!-- <div ng-show="planets"> -->
+    <button href="#" data-dropdown="drop1" aria-controls="drop1" aria-expanded="false" class="button dropdown">Dropdown Button</button><br>
+    <ul id="drop1" data-dropdown-content class="f-dropdown" aria-hidden="true">
+      <li><a href="#">Planet 1</a></li>
+      <li><a href="#">Planet 2</a></li>
+      <li><a href="#">Planet 3</a></li>
+    </ul>
 </div>
-<div ng-show="planets">
 
-
-</div>
-
-
-</div>
-
-  <div class="row header">
-    <div class="columns medium-12">
-      <h1>SWAPI</h1>
-    </div>
+<div class="row header">
+  <div class="columns medium-12">
+    <h1>SWAPI</h1>
   </div>
+</div>
 
-  <div class="row">
-    <div ui-view></div>
-  </div>
+<div class="row">
+  <div ui-view></div>
+</div>
 
-  <script src="js/main.js"></script>
-  <script src="js/PlanetCtrl.js"></script>
-  <script src="js/ResidentCtrl.js"></script>
-  <script src="js/services.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+<script src="js/PlanetCtrl.js"></script>
+<script src="js/ResidentCtrl.js"></script>
+<script src="js/services.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
 </body>
 </html>
